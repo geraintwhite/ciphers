@@ -3,7 +3,7 @@ import sys
 args = sys.argv[1:]
 
 if len(args) < 3:
-    sys.exit('Usage: {} [-e filename|plaintext] [-d filename|ciphertext] secret'.format(sys.argv[0]))
+    sys.exit('Usage: python {} [-e filename|plaintext] [-d filename|ciphertext] secret'.format(sys.argv[0]))
 
 option = args[0]
 

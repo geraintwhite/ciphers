@@ -1,12 +1,12 @@
 # ciphers
 
-Code implementation of common encryption algorithms
+Code implementations of common encryption algorithms
 
 ## vigenere.py
 
 A polyalphabetic substitution cipher
 
-`Usage: vigenere.py [-e filename|plaintext] [-d filename|ciphertext] secret`
+`Usage: python vigenere.py [-e filename|plaintext] [-d filename|ciphertext] secret`
 
 ```
 $ python vigenere.py -e "the quick brown fox jumped over the lazy dog" qwertyuiop
