@@ -17,8 +17,8 @@ secret = args[2]
 
 outputtext = ''
 for i, c in enumerate(inputtext):
-    c, s = ord(c.upper()), ord(secret[i%len(secret)].upper())-130
-    d = c-s if option == '-d' else c+s
-    outputtext += chr(d%26+65)
+    n, s = ord(c.upper()), ord(secret[i%len(secret)].upper())-130
+    d = n-s if option == '-d' else n+s
+    outputtext += chr(d%26+65) if c.isalpha() else c
 
 print(outputtext)
